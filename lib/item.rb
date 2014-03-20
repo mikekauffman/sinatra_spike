@@ -4,4 +4,7 @@ class Item
     @id = id
     @name = name
   end
+  #def item_list
+   # @name
+  #end
 end
