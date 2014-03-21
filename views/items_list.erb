@@ -4,7 +4,7 @@
 <h2><a href="/items/new">Create a new item</a></h2>
 <ul>
 
-  <% ItemsRepository.new.items(@search_term).each do |item| %>
+  <% ItemsRepository.new.items(*@search_term).each do |item| %>
 
     <li><%= item.name %> - <a href="/items/<%= item.id %>">Show Item</a></li>
   <% end %>
