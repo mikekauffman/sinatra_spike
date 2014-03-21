@@ -10,3 +10,7 @@ get '/items' do
   @search_term = params["filter"]
   erb :items_list
 end
+
+get '/items/new' do
+  erb :items_new
+end
