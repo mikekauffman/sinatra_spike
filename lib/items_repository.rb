@@ -1,7 +1,7 @@
 require '/Users/MikeMac/gSchoolWork/sinatra_spike/lib/item.rb'
 
 class ItemsRepository
-  def items(filter = "h")
+  def items(filter = "i")
     if filter.downcase == "cheese"
       [Item.new(3, "Cheese")]
     elsif filter.downcase == "garlic bread"
