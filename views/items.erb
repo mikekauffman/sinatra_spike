@@ -4,12 +4,13 @@
 <h2><a href="/items/new">Create a new item</a></h2>
 <ul>
 
-  <% ItemsRepository.new.items(@search_term).each do |item| %>
+  <% menu = ItemsRepository.new %>
+  <% menu_with_apples = menu.new_item_to_list(@new_item) %>
+  <% menu_with_apples.each do |item| %>
 
     <li><%= item.name %> - <a href="/items/<%= item.id %>">Show Item</a></li>
   <% end %>
 
 </ul>
-
 </body>
 </html>
